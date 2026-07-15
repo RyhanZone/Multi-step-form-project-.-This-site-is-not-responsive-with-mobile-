@@ -1,0 +1,252 @@
+
+.right-5 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 60px;
+    margin: 0 auto;
+    width: 100%;
+}
+.right-5 .thankyou-icon {
+    margin-bottom: 28px;
+}
+.right-5 h1 {
+    font-size: 32px;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 12px;
+}
+.right-5 p {
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+    line-height: 1.6;
+    max-width: 340px;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+    main {
+        width: 92vw;
+        height: auto;
+        min-height: 560px;
+    }
+    .right,
+    .right-2,
+    .right-3 {
+        padding-left: 40px;
+    }
+    .right-4 {
+        margin-left: 30px;
+        width: 75%;
+    }
+    .step {
+        width: 100%;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 0 0 40px 0;
+        align-items: flex-start;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        border-radius: 0;
+    }
+
+    /* ---- Sidebar becomes a top bar ---- */
+    .left {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0 0 10px 10px;
+        background-size: cover;
+        background-position: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .Step1,
+    .Step2,
+    .Step3,
+    .Step4 {
+        gap: 0;
+    }
+
+    /* Hide the text labels, keep just the numbered circle */
+    .Step1-text,
+    .Step2-text,
+    .Step3-text,
+    .Step4-text {
+        display: none;
+    }
+
+    .Step1 h1,
+    .Step2 h1,
+    .Step3 h1,
+    .Step4 h1 {
+        height: 33px;
+        width: 33px;
+        font-size: 18px;
+    }
+
+    /* ---- Floating content card ---- */
+    .right,
+    .right-2,
+    .right-3,
+    .right-4,
+    .right-5 {
+        width: 90%;
+        margin: -75px auto 0 auto;
+        padding: 28px 20px 24px 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .right h1,
+    .right-2 > h1,
+    .right-3 > h1,
+    .right-heading h1,
+    .right-5 h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .right p,
+    .right-2 > p,
+    .right-3 > p,
+    .right-heading p {
+        text-align: center;
+    }
+
+    form {
+        padding-top: 4px;
+    }
+
+    /* Reset the hard-coded absolute positioning on the Step 1 button */
+    form button {
+        position: static;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    /* ---- Step 2: plan cards stack ---- */
+    .packege-type {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .arcade,
+    .advanced,
+    .pro,
+    .arcade:hover,
+    .advanced:hover,
+    .pro:hover {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 15px;
+    }
+    .packege-type img {
+        width: 40px;
+        height: 40px;
+    }
+    .packege-type h1 {
+        padding-top: 0;
+        font-size: 18px;
+    }
+    .packege-type-date {
+        margin-top: 24px;
+    }
+    .button-and-a {
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+    .button-and-a button {
+        width: 100%;
+        order: 0;
+    }
+
+    /* ---- Step 3: add-ons stack ---- */
+    .step {
+        width: 100%;
+        height: auto;
+        margin-top: 14px;
+        padding: 14px;
+    }
+    .step1-left h1 {
+        font-size: 18px;
+    }
+    .right-button-and-a {
+        margin-top: 24px;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+    .right-button-and-a button {
+        width: 100%;
+        order: 0;
+    }
+
+    /* ---- Step 4: summary ---- */
+    .right-4 {
+        margin: -75px auto 0 auto;
+        width: 90%;
+        gap: 16px;
+    }
+    .right-middle {
+        width: 100%;
+        padding: 16px;
+    }
+    .friest {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-bottom: 10px;
+    }
+    .friest-right {
+        align-self: flex-start;
+    }
+    .second-middle {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .right-fotter {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 16px;
+        align-items: stretch;
+        margin-top: 24px;
+    }
+    .right-fotter button {
+        width: 100%;
+    }
+
+    .right-5 {
+        margin: -75px auto 0 auto;
+        padding: 36px 20px;
+    }
+    .right-5 .thankyou-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

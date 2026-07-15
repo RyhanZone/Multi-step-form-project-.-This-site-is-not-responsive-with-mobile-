@@ -16,6 +16,8 @@ let right = document.querySelector('.right');
 let right2 = document.querySelector('.right-2');
 let right3 = document.querySelector('.right-3');
 let right4 = document.querySelector('.right-4');
+let right5 = document.querySelector('.right-5');
+let confirmBtn = document.getElementById('confirm-button');
 
 let back1btn = document.getElementById('backbtn1');
 let back2btn = document.getElementById('backbtn2');
@@ -271,6 +273,12 @@ back3btn.addEventListener('click', function () {
     right3.style.display = 'flex';
     count--;
     updateStepColors();
+});
+
+/* = = = Step 4: confirm -> success page = = = */
+confirmBtn.addEventListener('click', function () {
+    right4.style.display = 'none';
+    right5.style.display = 'flex';
 });
 
 /* = = = Step Indicator Colors = = = */

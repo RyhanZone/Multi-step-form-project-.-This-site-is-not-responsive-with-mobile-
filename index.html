@@ -1,161 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <title>Multi-step form</title>
-</head>
-<body>
-      <main>
-          <!-- Left Section -->
-          <div class="left">
-            <div class="Step1">
-              <h1 id="step1h1">1</h1>
-              <div class="Step1-text">
-                <h5>Step 1</h5>
-                <h3>Your info</h3>
-              </div>
-            </div>
-            <div class="Step2">
-              <h1 id="step2h1">2</h1>
-              <div class="Step2-text">
-                <h5>Step 2</h5>
-                <h3>Select plan</h3>
-              </div>
-            </div>
-            <div class="Step3">
-              <h1 id="step3h1">3</h1>
-              <div class="Step3-text">
-                <h5>Step 3</h5>
-                <h3>Add-ons</h3>
-              </div>
-            </div>
-            <div class="Step4">
-              <h1 id="step4h1">4</h1>
-              <div class="Step4-text">
-                <h5>Step 4</h5>
-                <h3>Summary</h3>
-              </div> 
-            </div>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Multi-step form</title>
+  </head>
+  <body>
+    <main>
+      <!-- Left Section -->
+      <div class="left">
+        <div class="Step1">
+          <h1 id="step1h1">1</h1>
+          <div class="Step1-text">
+            <h5>Step 1</h5>
+            <h3>Your info</h3>
           </div>
-          <!-- Right Section -->
-          <div class="right">
-              <h1>Personal info</h1>
-              <p>Please provide your name, email address, and phone number.</p>
-              <form action="#">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Enter a your full name">
-                  
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" placeholder="enter a valide email Address">
-                  
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" required>
-                  
-                  <button type="submit" id="submitbtn">Next Step</button>
-              </form>
+        </div>
+        <div class="Step2">
+          <h1 id="step2h1">2</h1>
+          <div class="Step2-text">
+            <h5>Step 2</h5>
+            <h3>Select plan</h3>
           </div>
-          <div class="right-2">
-            <h1>Select your plan</h1>
-            <p>You have the option of monthly or yearly billing.</p>
-            <div class="packege-type">
-                <div class="arcade">
-                    <img src="assets/images/icon-arcade.svg" alt="arcade image">
-                    <h1 id="planetitle1">Arcade</h1>
-                    <p>&dollar;<i id="arcadeprice">9</i>&#47;mo</p>
-                </div>
-                <div class="advanced">
-                    <img src="assets/images/icon-advanced.svg" alt="advanced image">
-                    <h1 id="planetitle2">Advanced</h1>
-                    <p>&dollar;<i id="advancedprice">12</i>&#47;mo</p>
-                </div>
-                <div class="pro">
-                    <img src="assets/images/icon-pro.svg" alt="arcade image">
-                    <h1 id="planetitle3">Pro</h1>
-                    <p>&dollar;<i id="proprice">15</i>&#47;mo</p>
-                </div>
-            </div>
-            <div class="packege-type-date">
-                <p id="month">Monthly</p>
-                <div class="toggle-container">
-                  <div class="toggle-checkbox"></div>
-                </div>
-                <p id="yearly">Yearly</p>
-            </div>
-            <div class="button-and-a">  
-              <button class="submit">Next Step</button>
-              <a href="#" id="backbtn1">Go Back</a>
-            </div>
+        </div>
+        <div class="Step3">
+          <h1 id="step3h1">3</h1>
+          <div class="Step3-text">
+            <h5>Step 3</h5>
+            <h3>Add-ons</h3>
           </div>
-          <div class="right-3">
-            <h1>Pick add-ons</h1>
-            <p>Add-ons help enhance your gaming experience.</p>
-            <label for="checkbox" class="step">
-                <input id="checkbox" type="checkbox" name="checkbox">
-                <div class="step1-left">
-                    <h1>Online service</h1>
-                    <p>Access to multiplayer games</p>                  
-                </div>
-                <p>+$<i id="step1-price">1</i>/mo</p>
-            </label>
-            <label for="checkbox1" class="step">
-                <input id="checkbox1" type="checkbox" name="checkbox" style="color: red;">
-                <div class="step1-left">
-                   <h1>Larger storage</h1>  
-                   <p>  Extra 1TB of cloud save</p>  
-                </div>
-                <p>+$<i id="step2-price">2</i>/mo</p>
-                
-            </label>
-            <label for="checkbox2" class="step">
-                <input id="checkbox2" type="checkbox" name="checkbox">
-                <div class="step1-left">
-                    <h1>Customizable Profile</h1>
-                    <p>Custom theme on your profile</p>  
-                </div>
-                <p>+$<i id="step3-price">2</i>/mo</p>  
-            </label>
-            <div class="right-button-and-a"> 
-              <a href="#" id="backbtn2">Go Back</a> 
-              <button class="submit1">Next Step</button>
-            </div>
+        </div>
+        <div class="Step4">
+          <h1 id="step4h1">4</h1>
+          <div class="Step4-text">
+            <h5>Step 4</h5>
+            <h3>Summary</h3>
           </div>
-          <div class="right-4">
-              <div class="right-heading">
-                <h1>Finishing up</h1>
-                <p>Double-check everything looks ok before confirming</p>
-              </div>
-              <div class="right-middle">
-                <div class="friest">
-                <div class="friest-left">
-                  <h3> <p id="planname"></p>  / ( <p id="planedate">mon</p> )</h3>
-                  <a>change</a>
-                </div>
-                <div class="friest-right">
-                  <h4>$ <p id="planprice"></p> / <p id="planedururation"></p></h4>
-                </div>
-                </div>
-                <div class="sceond">
-                  
-                </div>
+        </div>
+      </div>
+      <!-- Right Section -->
+      <div class="right">
+        <h1>Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        <form action="#">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter a your full name" />
 
-              </div>
-              <div class="second-middle">
-                <p class="second-middle-left">
-              Total (per month)
-                </p>
-                <p class="second-middle-right">
-              <i id="Total-result"></i>
-                </p>
-              </div>
-              <div class="right-fotter">
-                <a id="backbtn3">Go Back</a>
-                <button>confirm</button>
-              </div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="enter a valide email Address"
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="e.g. +1 234 567 890"
+            required
+          />
+
+          <button type="submit" id="submitbtn">Next Step</button>
+        </form>
+      </div>
+      <div class="right-2">
+        <h1>Select your plan</h1>
+        <p>You have the option of monthly or yearly billing.</p>
+        <div class="packege-type">
+          <div class="arcade">
+            <img src="images/icon-arcade.svg" alt="arcade image" />
+            <h1 id="planetitle1">Arcade</h1>
+            <p>&dollar;<i id="arcadeprice">9</i>&#47;mo</p>
           </div>
-      </main>
-      <script src="script.js"></script>
-</body>
+          <div class="advanced">
+            <img src="images/icon-advanced.svg" alt="advanced image" />
+            <h1 id="planetitle2">Advanced</h1>
+            <p>&dollar;<i id="advancedprice">12</i>&#47;mo</p>
+          </div>
+          <div class="pro">
+            <img src="images/icon-pro.svg" alt="arcade image" />
+            <h1 id="planetitle3">Pro</h1>
+            <p>&dollar;<i id="proprice">15</i>&#47;mo</p>
+          </div>
+        </div>
+        <div class="packege-type-date">
+          <p id="month">Monthly</p>
+          <div class="toggle-container">
+            <div class="toggle-checkbox"></div>
+          </div>
+          <p id="yearly">Yearly</p>
+        </div>
+        <div class="button-and-a">
+          <button class="submit">Next Step</button>
+          <a href="#" id="backbtn1">Go Back</a>
+        </div>
+      </div>
+      <div class="right-3">
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience.</p>
+        <label for="checkbox" class="step">
+          <input id="checkbox" type="checkbox" name="checkbox" />
+          <div class="step1-left">
+            <h1>Online service</h1>
+            <p>Access to multiplayer games</p>
+          </div>
+          <p>+$<i id="step1-price">1</i>/mo</p>
+        </label>
+        <label for="checkbox1" class="step">
+          <input
+            id="checkbox1"
+            type="checkbox"
+            name="checkbox"
+            style="color: red"
+          />
+          <div class="step1-left">
+            <h1>Larger storage</h1>
+            <p>Extra 1TB of cloud save</p>
+          </div>
+          <p>+$<i id="step2-price">2</i>/mo</p>
+        </label>
+        <label for="checkbox2" class="step">
+          <input id="checkbox2" type="checkbox" name="checkbox" />
+          <div class="step1-left">
+            <h1>Customizable Profile</h1>
+            <p>Custom theme on your profile</p>
+          </div>
+          <p>+$<i id="step3-price">2</i>/mo</p>
+        </label>
+        <div class="right-button-and-a">
+          <a href="#" id="backbtn2">Go Back</a>
+          <button class="submit1">Next Step</button>
+        </div>
+      </div>
+      <div class="right-4">
+        <div class="right-heading">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks ok before confirming</p>
+        </div>
+        <div class="right-middle">
+          <div class="friest">
+            <div class="friest-left">
+              <h3>
+                <p id="planname"></p>
+                / (
+                <p id="planedate">mon</p>
+                )
+              </h3>
+              <a>change</a>
+            </div>
+            <div class="friest-right">
+              <h4>
+                $
+                <p id="planprice"></p>
+                /
+                <p id="planedururation"></p>
+              </h4>
+            </div>
+          </div>
+          <div class="sceond"></div>
+        </div>
+        <div class="second-middle">
+          <p class="second-middle-left">Total (per month)</p>
+          <p class="second-middle-right">
+            <i id="Total-result"></i>
+          </p>
+        </div>
+        <div class="right-fotter">
+          <a id="backbtn3">Go Back</a>
+          <button id="confirm-button">confirm</button>
+        </div>
+      </div>
+      <!-- Success / Thank you page -->
+      <div class="right-5">
+        <svg
+          class="thankyou-icon"
+          width="80"
+          height="80"
+          viewBox="0 0 80 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="40" cy="40" r="40" fill="url(#thankyouGradient)" />
+          <path
+            d="M25 41L35 51L56 30"
+            stroke="white"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <defs>
+            <linearGradient
+              id="thankyouGradient"
+              x1="0"
+              y1="0"
+              x2="80"
+              y2="80"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="hsl(354, 84%, 57%)" />
+              <stop offset="1" stop-color="hsl(213, 96%, 18%)" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <h1>Thank you!</h1>
+        <p>
+          Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free to
+          email us at support@loremgaming.com.
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
